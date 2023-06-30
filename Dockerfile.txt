@@ -21,4 +21,6 @@ COPY *.pro /root/Manukyan/
 RUN qmake -o myshop EchoServer.pro
 RUN make myshop
 
+CMD ["./myShop"]
+
 EXPOSE 55555
