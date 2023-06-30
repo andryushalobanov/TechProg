@@ -1,0 +1,24 @@
+FROM ubuntu:18.04
+
+LABEL author="Manukyan Vagram 221-352"
+
+ENV TZ=Europe/Moscow  
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone  
+RUN apt-get update  
+RUN apt-get install qt5-default -y  
+RUN apt-get install qtbase5-dev -y
+RUN apt-get install qt5-qmake  
+RUN apt-get install build-essential -y 
+
+WORKDIR /root/
+RUN mkdir Manukyan
+WORKDIR /root/Manukyan/
+
+COPY *.cpp /root/Manukyan/
+COPY *.h /root/Manukyan/
+COPY *.pro /root/Manukyan/
+
+RUN qmake -o myshop EchoServer.pro
+RUN make myshop
+
+EXPOSE 55555
