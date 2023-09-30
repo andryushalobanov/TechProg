@@ -1,1 +1,1 @@
-https://hub.docker.com/repository/docker/revendas/exam_container/general
+https://hub.docker.com/repository/docker/revendas/exam_manukyan/general
