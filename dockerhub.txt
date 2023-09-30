@@ -1,1 +1,7 @@
 https://hub.docker.com/r/kostix123123/exam_konstantin
+
+$ docker build -t название контейнера .
+
+$ docker run -p 33333:33333 название контейнера
+
+$ docker cp container_id(id контейнера):/путь к файлу в контейнере /путь на хост,куда сохранять
