@@ -1,0 +1,118 @@
+\doxysection{ui\+\_\+\+Task\+Form.\+h}
+\hypertarget{ui___task_form_8h_source}{}\label{ui___task_form_8h_source}\index{D:/qt/projs/Project/client/ui\_TaskForm.h@{D:/qt/projs/Project/client/ui\_TaskForm.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'TaskForm.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.5.0}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_TASKFORM\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_TASKFORM\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___task_form}{Ui\_TaskForm}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ QLabel\ *statusLabel;}
+\DoxyCodeLine{00027\ \ \ \ \ QWidget\ *layoutWidget;}
+\DoxyCodeLine{00028\ \ \ \ \ QVBoxLayout\ *verticalLayout;}
+\DoxyCodeLine{00029\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00030\ \ \ \ \ QLabel\ *YourAnswerlabel;}
+\DoxyCodeLine{00031\ \ \ \ \ QLineEdit\ *AnswerLineEdit;}
+\DoxyCodeLine{00032\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_2;}
+\DoxyCodeLine{00033\ \ \ \ \ QPushButton\ *TryButton;}
+\DoxyCodeLine{00034\ \ \ \ \ QPushButton\ *LoseButton;}
+\DoxyCodeLine{00035\ \ \ \ \ QLabel\ *taskText;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QWidget\ *\mbox{\hyperlink{class_task_form}{TaskForm}})}
+\DoxyCodeLine{00038\ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_task_form}{TaskForm}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_task_form}{TaskForm}}-\/>setObjectName(\textcolor{stringliteral}{"{}TaskForm"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_task_form}{TaskForm}}-\/>resize(504,\ 353);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ statusLabel\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_task_form}{TaskForm}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ statusLabel-\/>setObjectName(\textcolor{stringliteral}{"{}statusLabel"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ statusLabel-\/>setGeometry(QRect(20,\ 440,\ 261,\ 20));}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ layoutWidget\ =\ \textcolor{keyword}{new}\ QWidget(\mbox{\hyperlink{class_task_form}{TaskForm}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ layoutWidget-\/>setObjectName(\textcolor{stringliteral}{"{}layoutWidget"{}});}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ layoutWidget-\/>setGeometry(QRect(10,\ 210,\ 481,\ 131));}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ verticalLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout(layoutWidget);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ verticalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}verticalLayout"{}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ verticalLayout-\/>setContentsMargins(0,\ 0,\ 0,\ 0);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ YourAnswerlabel\ =\ \textcolor{keyword}{new}\ QLabel(layoutWidget);}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ YourAnswerlabel-\/>setObjectName(\textcolor{stringliteral}{"{}YourAnswerlabel"{}});}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(YourAnswerlabel);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ AnswerLineEdit\ =\ \textcolor{keyword}{new}\ QLineEdit(layoutWidget);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ AnswerLineEdit-\/>setObjectName(\textcolor{stringliteral}{"{}AnswerLineEdit"{}});}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(AnswerLineEdit);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ verticalLayout-\/>addLayout(horizontalLayout);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ horizontalLayout\_2\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout\_2"{}});}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ TryButton\ =\ \textcolor{keyword}{new}\ QPushButton(layoutWidget);}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ TryButton-\/>setObjectName(\textcolor{stringliteral}{"{}TryButton"{}});}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addWidget(TryButton);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ LoseButton\ =\ \textcolor{keyword}{new}\ QPushButton(layoutWidget);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ LoseButton-\/>setObjectName(\textcolor{stringliteral}{"{}LoseButton"{}});}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ horizontalLayout\_2-\/>addWidget(LoseButton);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ verticalLayout-\/>addLayout(horizontalLayout\_2);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ taskText\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_task_form}{TaskForm}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ taskText-\/>setObjectName(\textcolor{stringliteral}{"{}taskText"{}});}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ taskText-\/>setGeometry(QRect(10,\ 10,\ 481,\ 191));}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ QFont\ font;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ font.setFamilies(\{QString::fromUtf8(\textcolor{stringliteral}{"{}Segoe\ UI"{}})\});}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ font.setPointSize(14);}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ taskText-\/>setFont(font);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ retranslateUi(\mbox{\hyperlink{class_task_form}{TaskForm}});}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{class_task_form}{TaskForm}});}
+\DoxyCodeLine{00092\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QWidget\ *\mbox{\hyperlink{class_task_form}{TaskForm}})}
+\DoxyCodeLine{00095\ \ \ \ \ \{}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_task_form}{TaskForm}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}TaskForm"{}},\ \textcolor{stringliteral}{"{}Form"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ statusLabel-\/>setText(QString());}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ YourAnswerlabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}TaskForm"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)222\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)210\ \(\backslash\)320\(\backslash\)276\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)262\(\backslash\)320\(\backslash\)265\(\backslash\)321\(\backslash\)202:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ TryButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}TaskForm"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)241\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)260\(\backslash\)321\(\backslash\)202\(\backslash\)321\(\backslash\)214"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ LoseButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}TaskForm"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)222\(\backslash\)321\(\backslash\)213\(\backslash\)320\(\backslash\)271\(\backslash\)321\(\backslash\)202\(\backslash\)320\(\backslash\)270"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ taskText-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}TaskForm"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)320\(\backslash\)242\(\backslash\)320\(\backslash\)265\(\backslash\)320\(\backslash\)272\(\backslash\)321\(\backslash\)201\(\backslash\)321\(\backslash\)202\ \(\backslash\)320\(\backslash\)267\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)264\(\backslash\)320\(\backslash\)260\(\backslash\)320\(\backslash\)275\(\backslash\)320\(\backslash\)270\(\backslash\)321\(\backslash\)217"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00102\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_task_form}{TaskForm}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___task_form}{Ui\_TaskForm}}\ \{\};}
+\DoxyCodeLine{00108\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_TASKFORM\_H}}
+
+\end{DoxyCode}

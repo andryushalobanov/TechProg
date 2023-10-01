@@ -1,0 +1,37 @@
+\doxysection{serverfunction.\+h}
+\hypertarget{serverfunction_8h_source}{}\label{serverfunction_8h_source}\index{D:/qt/projs/Project/server/serverfunction.h@{D:/qt/projs/Project/server/serverfunction.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ serverfunction\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ serverfunction\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QCoreApplication>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}database.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}tasks.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QCoreApplication>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QJsonDocument>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QJsonValue>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QJsonArray>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QSqlQuery>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QSqlRecord>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QCryptographicHash>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00020\ \textcolor{comment}{parsing\ —\ функция,\ которая\ обрабатывает\ сообщения\ клиента:\ выделяет\ команду\ и\ аргументы,\ а\ затем\ вызывает\ соответствующую\ функцию}}
+\DoxyCodeLine{00021\ \textcolor{comment}{Аргумент\ data\ —\ сообщение,\ пришедшее\ от\ клиента}}
+\DoxyCodeLine{00022\ \textcolor{comment}{Возвращаемое\ значение\ —\ ответ\ соответствующей\ функции}}
+\DoxyCodeLine{00023\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00024\ QByteArray\ parse(QByteArray\ request);}
+\DoxyCodeLine{00025\ QByteArray\ auth(QJsonObject\ request);}
+\DoxyCodeLine{00026\ QByteArray\ reg(QJsonObject\ request);}
+\DoxyCodeLine{00027\ QByteArray\ getUserStat(QJsonObject\ request);}
+\DoxyCodeLine{00028\ QByteArray\ getTask(QJsonObject\ request);}
+\DoxyCodeLine{00029\ QByteArray\ checkTask(QJsonObject\ request);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

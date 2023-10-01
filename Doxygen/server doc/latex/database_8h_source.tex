@@ -1,0 +1,52 @@
+\doxysection{database.\+h}
+\hypertarget{database_8h_source}{}\label{database_8h_source}\index{D:/qt/projs/Project/server/database.h@{D:/qt/projs/Project/server/database.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DATABASE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DATABASE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QSqlDatabase>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database}{Database}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }DatabaseDestroyer}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database}{Database}}\ *\ pInstance;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \string~DatabaseDestroyer()\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ this-\/>pInstance;}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initialize(\mbox{\hyperlink{class_database}{Database}}\ *p)\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>pInstance\ =\ p;}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_database}{Database}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_database}{Database}}\ *\ pInstance;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initDB();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ QSqlDatabase\ dbInstance;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ DatabaseDestroyer\ destroyer;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}}();}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_database}{Database}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database}{Database}}\&\ operator\ =\ (\mbox{\hyperlink{class_database}{Database}}\ \&)=\textcolor{keyword}{delete};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_database_a84d399a2ad58d69daab9b05330e1316d}{\string~Database}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }DatabaseDestroyer;}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_database}{Database}}*\ getInstance()\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!pInstance)\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pInstance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database}}();}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ destroyer.initialize(pInstance);}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ pInstance;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ QSqlQuery\ \mbox{\hyperlink{class_database_af5bf6727bf0c93776992d808fd1b1c55}{doSQLQuery}}(QString\ stringQuery);}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATABASE\_H}}
+
+\end{DoxyCode}
