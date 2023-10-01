@@ -1,0 +1,79 @@
+\doxysection{Network Class Reference}
+\hypertarget{class_network}{}\label{class_network}\index{Network@{Network}}
+
+
+Синглтон-\/класс для работы с сетью  
+
+
+
+
+{\ttfamily \#include $<$network.\+h$>$}
+
+Inheritance diagram for Network\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_network}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QJson\+Object \mbox{\hyperlink{class_network_ab2e272a718c3c2b3fa4515695118626f}{do\+Request}} (QVariant\+Map request)
+\begin{DoxyCompactList}\small\item\em Фукнция выполнения JSON-\/запроса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_network_ae38fd4ac18c456cc75aa295539ef3d2e}\label{class_network_ae38fd4ac18c456cc75aa295539ef3d2e} 
+static \mbox{\hyperlink{class_network}{Network}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}\label{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8} 
+{\bfseries Network} ()
+\begin{DoxyCompactList}\small\item\em Конструктор класса, фукнция инициализации TCP-\/соединения. \end{DoxyCompactList}\item 
+\Hypertarget{class_network_a3eccb7fe2c192bf6f13482297783b1b8}\label{class_network_a3eccb7fe2c192bf6f13482297783b1b8} 
+{\bfseries Network} (const \mbox{\hyperlink{class_network}{Network}} \&)=delete
+\item 
+\Hypertarget{class_network_a08161e6c1560eb5736918976356b57ff}\label{class_network_a08161e6c1560eb5736918976356b57ff} 
+\mbox{\hyperlink{class_network}{Network}} \& {\bfseries operator=} (\mbox{\hyperlink{class_network}{Network}} \&)=delete
+\item 
+\Hypertarget{class_network_a7a4e19cdb4bf0c7ecf82baa643831492}\label{class_network_a7a4e19cdb4bf0c7ecf82baa643831492} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Network} ()
+\begin{DoxyCompactList}\small\item\em Деструктор класса \doxylink{class_network}{Network}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_network_a46fd151c885413107630593fe316324a}\label{class_network_a46fd151c885413107630593fe316324a} 
+class {\bfseries Network\+Destroyer}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Синглтон-\/класс для работы с сетью 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_network_ab2e272a718c3c2b3fa4515695118626f}\label{class_network_ab2e272a718c3c2b3fa4515695118626f} 
+\index{Network@{Network}!doRequest@{doRequest}}
+\index{doRequest@{doRequest}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{doRequest()}{doRequest()}}
+{\footnotesize\ttfamily QJson\+Object Network\+::do\+Request (\begin{DoxyParamCaption}\item[{QVariant\+Map}]{request }\end{DoxyParamCaption})}
+
+
+
+Фукнция выполнения JSON-\/запроса 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Передаваемые} & данные \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ответ сервера в JSON-\/формате 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/qt/projs/\+Project/client/network.\+h\item 
+D\+:/qt/projs/\+Project/client/network.\+cpp\end{DoxyCompactItemize}
